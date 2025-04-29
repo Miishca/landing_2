@@ -9,8 +9,8 @@ This repository contains the source code for the landing page of a museum. The l
 3. [Technologies Used](#technologies-used)
 4. [Features](#features)
 5. [Installation and Setup](#installation-and-setup)
-5. [License](#license)
-6. [Contact](#contact)
+6. [License](#license)
+7. [Contact](#contact)
 
 ## Overview
 
@@ -42,21 +42,41 @@ The landing page for the museum is designed to offer an engaging and informative
 
 To set up and run the project locally, follow these steps:
 
-1. **Clone the Repository**:
-   Clone the project to your local machine using Git:
-     git clone https://github.com/miishca/landing_2.git
-     cd landing_2
+Clone the project to your local machine using Git:
+  git clone https://github.com/miishca/landing_2.git
+  cd landing_2
 
-   Install the project dependencies using npm:
-     npm install
+Install Node.js
+Ensure you have Node.js installed (version 16 or higher is recommended). Verify by running:
+  node --version
+  npm --version
 
-   Start the local development server using the following command:
-     npm start
+Install the project dependencies using npm:
+  npm install
 
-  If the server fails to start, clear the Parcel cache:
-    rm -rf .parcel-cache dist
-    npm start
+Run the Development Server
+Start the local development server:
+  npm start
 
+This launches a live server (powered by Parcel) and opens the project in your default browser (typically at http://localhost:1234). The server supports hot reloading, so changes to your code will automatically update in the browser.
+
+Build for Production (Optional)
+To create an optimized build for deployment:
+  npm run build
+
+The compiled files will be output to the dist directory, ready for hosting.
+
+Troubleshooting
+If styles are not loading, ensure index.html references the correct CSS file (e.g., styles/style.css instead of styles/style.scss). Manually compile SCSS to CSS if needed:
+  npx sass styles/style.scss styles/style.css
+
+If the server fails to start, clear the Parcel cache:
+  rm -rf .parcel-cache dist
+  npm start
+
+Check the browser console (F12 → Console) for errors related to missing files or incorrect paths.
+
+Ensure all SCSS imports in styles/style.scss (e.g., utils/vars.scss, blocks/page.scss) exist and are error-free.
 
 ## License
 
