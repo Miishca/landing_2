@@ -8,6 +8,7 @@ This repository contains the source code for the landing page of a museum. The l
 2. [Demo](#demo)
 3. [Technologies Used](#technologies-used)
 4. [Features](#features)
+5. [Installation and Setup](#installation-and-setup)
 5. [License](#license)
 6. [Contact](#contact)
 
@@ -36,6 +37,26 @@ The landing page for the museum is designed to offer an engaging and informative
 - **Events Section**: Provides information about upcoming events at the museum.
 - **Gallery**: A collection of images showcasing the museum's exhibits.
 - **Contact Form**: Allows users to send messages to the museum, along with contact details including phone number, email, and physical address.
+
+## Installation and Setup
+
+To set up and run the project locally, follow these steps:
+
+1. **Clone the Repository**:
+   Clone the project to your local machine using Git:
+     git clone https://github.com/miishca/landing_2.git
+     cd landing_2
+
+   Install the project dependencies using npm:
+     npm install
+
+   Start the local development server using the following command:
+     npm start
+
+  If the server fails to start, clear the Parcel cache:
+    rm -rf .parcel-cache dist
+    npm start
+
 
 ## License
 
