@@ -110,7 +110,6 @@ To run the project locally:
 
 - **Ensure all SCSS imports exist and are correct** in `styles/style.scss`
 
-```
 
 ## License
 
