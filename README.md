@@ -122,4 +122,3 @@ If you have any questions or suggestions, feel free to reach out:
 
 - **Email:** [mykhailoevo@gmail.com](mailto:mykhailoevo@gmail.com)
 - **GitHub:** [miishca](https://github.com/miishca)
-```
