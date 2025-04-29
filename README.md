@@ -38,45 +38,79 @@ The landing page for the museum is designed to offer an engaging and informative
 - **Gallery**: A collection of images showcasing the museum's exhibits.
 - **Contact Form**: Allows users to send messages to the museum, along with contact details including phone number, email, and physical address.
 
-## Installation and Setup
+## 📦 Installation and Setup
 
-To set up and run the project locally, follow these steps:
+To run the project locally:
 
-Clone the project to your local machine using Git:
-  git clone https://github.com/miishca/landing_2.git
-  cd landing_2
+1. **Clone the repository**
 
-Install Node.js
-Ensure you have Node.js installed (version 16 or higher is recommended). Verify by running:
-  node --version
-  npm --version
+   ```bash
+   git clone https://github.com/miishca/landing_2.git
+   cd landing_2
+   ```
 
-Install the project dependencies using npm:
-  npm install
+2. **Install Node.js**
 
-Run the Development Server
-Start the local development server:
-  npm start
+   Ensure you have Node.js installed (version 16 or higher).
+   Check version:
 
-This launches a live server (powered by Parcel) and opens the project in your default browser (typically at http://localhost:1234). The server supports hot reloading, so changes to your code will automatically update in the browser.
+   ```bash
+   node --version
+   npm --version
+   ```
 
-Build for Production (Optional)
-To create an optimized build for deployment:
-  npm run build
+3. **Install project dependencies**
 
-The compiled files will be output to the dist directory, ready for hosting.
+   ```bash
+   npm install
+   ```
 
-Troubleshooting
-If styles are not loading, ensure index.html references the correct CSS file (e.g., styles/style.css instead of styles/style.scss). Manually compile SCSS to CSS if needed:
+4. **Run the development server**
+
+   ```bash
+   npm start
+   ```
+
+   The local server will automatically open at:
+
+   ```
+   http://localhost:1234
+   ```
+
+5. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+   The optimized files will be placed in the `dist` folder.
+
+## 🛠️ Troubleshooting
+
+- **If styles don’t load**, check your CSS link path in `index.html`:
+
+  ```html
+  <link rel="stylesheet" href="styles/style.css" />
+  ```
+
+- **Manually compile SCSS if necessary**:
+
+  ```bash
   npx sass styles/style.scss styles/style.css
+  ```
 
-If the server fails to start, clear the Parcel cache:
+- **If dev server fails to start**, clear Parcel cache:
+
+  ```bash
   rm -rf .parcel-cache dist
   npm start
+  ```
 
-Check the browser console (F12 → Console) for errors related to missing files or incorrect paths.
+- **Check browser console for errors (F12 → Console tab)**
 
-Ensure all SCSS imports in styles/style.scss (e.g., utils/vars.scss, blocks/page.scss) exist and are error-free.
+- **Ensure all SCSS imports exist and are correct** in `styles/style.scss`
+
+```
 
 ## License
 
@@ -88,3 +122,4 @@ If you have any questions or suggestions, feel free to reach out:
 
 - **Email:** [mykhailoevo@gmail.com](mailto:mykhailoevo@gmail.com)
 - **GitHub:** [miishca](https://github.com/miishca)
+```
